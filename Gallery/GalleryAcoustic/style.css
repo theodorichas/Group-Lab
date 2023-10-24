@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* background-color: #343434; */
+    font-family: 'IM Fell English SC', serif;
+}
+
+br{
+    margin: 2vh;
+}
+
+nav{
+    z-index: 1;
+    position: fixed;
+    background-color: #e87a00;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vw;
+    height: 3vh;
+    width: 100%;
+    top: 0;
+    gap: 20vw;
+}
+
+.Header_Logo img{
+    width: 11vw;
+    /* margin-right: 40vw; */
+}
+
+.Menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.Menu_Generic{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.Menu_Generic a{
+    font-size: 1.4vw;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.Menu_Generic a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+.Menu_Button button{
+    font-size: 1.4vw;
+    text-decoration: none;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw 1vw;
+    background-color: #9D3E2A;
+    border:none;
+    transition: 0.3s;
+}
+
+.Menu_Button button:hover{
+    color: black;
+    background-color: #C9C9C9;
+    transition: 0.3s;
+}
+
+.Header nav .Menu{
+    margin-left: 40vw;
+}
+
+main{
+    background-color: #343434;
+    padding-top: 15vh;
+    padding-bottom: 12vh;
+}
+
+.Title{
+    text-align: center;
+    margin-bottom: 10vh;
+    font-size: 2vw;
+}
+
+.GuitarList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Guitar1, .Guitar2, .Guitar3{
+    background-color: #9D3E2A;
+    text-align: center;
+    padding: 2vh;
+    border-radius: 2vw;
+    border: none;
+    border-color: white;
+    width: 15vw;
+    transition: 0.3s;
+}
+
+.GuitarList img{
+    width: 10vw;
+    margin-bottom: 2vh;
+}
+
+.Guitar1 img{
+    height: 53vh;
+}
+
+.Guitar3 img{
+    height: 53vh;
+    width: 13vw;
+}
+
+.GuitarList h1{
+    font-size: 1.3vw;
+}
+
+.GuitarList h2{
+    font-size: 1vw;
+}
+
+.Guitar1:hover,.Guitar2:hover,.Guitar3:hover{
+    background-color: #e87a00;
+    transition: 0.3s;
+}
+
+.Guitar1:hover h1,.Guitar2:hover h1,.Guitar3:hover h1,.Guitar1:hover h2,.Guitar2:hover h2,.Guitar3:hover h2{
+    color: black;
+    transition: 0.3s;
+}
+
+.Line{
+    padding: 0.5vw;
+    background-color: #9D3E2A;
+}
+
+.Footer{
+    background-color: #e87a00;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 1vw;
+    padding-top: 1vw;
+}
+
+.Footer h4{
+    color:black;
+}
+
+.Footer_Address{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+}
+
+.Footer_Logo{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 17vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+.Footer_Logo img{
+    width: 13vw;
+    margin-bottom: 5vh;
+}
+
+.Footer_Logo h4{
+    font-size: 1.2vw;
+    width: 30vw;
+}
+
+.Footer_Info{
+    margin-top: 35vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8vw;
+    margin-bottom: 3vh;
+}
+
+.Footer_Sosmed{
+    display: flex;
+    flex-direction: row;
+}
+
+.Footer_Sosmed img{
+    width: 3vw;
+    margin-right: 0.5vw;
+    margin-top: 1vh;
+    transition: 0.3s;
+}
+
+.Sosmed_Logo{
+    position: relative;
+    display: inline-block;
+    align-items: center;
+}
+
+.Sosmed_Logo .Hover{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:0;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.Sosmed_Logo .Hover:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px){
+    .Guitar1 img{
+        height: 31vh;
+    }
+    .Guitar3 img{
+        height: 31vh;
+        width: 13vw;
+    }
+    .Footer_Logo{
+        margin-top: 4vh;
+    }
+    .Footer_Logo h4{
+        font-size: 1.5vw;
+    }
+    .Footer_Address h4{
+        font-size: 1.7vw;
+    }
+    .Footer_Logo img{
+        width: 13vw;
+        margin-bottom: 3vh;
+    }
+    .Footer_Info{
+        margin-top: 24vh;
+    }
+}
